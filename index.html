@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <h1 id="title">freeCodeCamp Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+                <form id="survey-form">
+                    <div class="input-name">
+                        <label id="name-label"> Name</label>
+                        <input id="name" type="text" placeholder="  Enter your name" required>
+                    </div>
+                    <div class="input-email">
+                        <label id="email-label"> E-mail</label>
+                        <input id="email" type="email" placeholder="  Enter your Email" required>
+                    </div>
+                    <div class="input-number">
+                        <label id="number-label"> Age</label>
+                        <input id="number" type="number" max="99" min="0" placeholder="  Age">
+                    </div>
+
+                    <div class="recommend">
+                        <label id="radio-label">Would you recommend freeCodeCamp to a friend?</label>
+                        <label><input type="radio" name="user-recommend" value="definitely">Definitely</label>
+                        <label><input type="radio" name="user-recommend" value="maybe">Maybe</label>
+                        <label><input type="radio" name="user-recommend" value="not-sure">Not sure</label>
+                    </div>
+
+                    <div class="favorite-feat">
+                        <label id="dropdown-label">What is your favorite feature of freeCodeCamp?</label>
+                        <select id="dropdown">
+                            <option>Select an option</option>
+                            <option>Challenges</option>
+                            <option>Projects</option>
+                            <option>Community</option>
+                            <option>Open Source</option>
+                        </select>
+                    </div>
+
+                    <div class="improved">
+                        <label id="checkbox-label">What would you like to see improved?</label>
+                        <label><input type="checkbox" name="prefer" value="Front-end Projects">
+                            Front-end Projects</label>
+                        <label><input type="checkbox" name="prefer" value="Back-end Projects">
+                            Back-end Projects</label>
+                        <label><input type="checkbox" name="prefer" value="Data Visualization">
+                            Data Visualization</label>
+                        <label><input type="checkbox" name="prefer" value="Challenges">
+                            Challengess</label>
+                        <label><input type="checkbox" name="prefer" value="Open Source Community">
+                            Open Source Community</label>
+                        <label><input type="checkbox" name="prefer" value="Gitter help rooms">
+                            Gitter help rooms</label>
+                        <label><input type="checkbox" name="prefer" value="Videos">
+                            Videos</label>
+                        <label><input type="checkbox" name="prefer" value="City Meetups">
+                            City Meetups</label>
+                        <label><input type="checkbox" name="prefer" value="Wiki">
+                            Wiki</label>
+                        <label><input type="checkbox" name="prefer" value="Forum">
+                            Forum</label>
+                        <label><input type="checkbox" name="prefer" value="Additional Courses">
+                            Additional Courses</label>
+                    </div>
+
+                    <div class="text-comments">
+                        <label id="label-textarea">What is your favorite feature of freeCodeCamp?</label>
+                        <textarea id="comments"></textarea>
+                    </div>
+
+                    <div class="btn">
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
